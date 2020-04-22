@@ -16,7 +16,7 @@ ul {
 }
 
 li {
-    margin-bottom: 15px;
+    margin-bottom: 0;
 }
 a {
     text-decoration: none;
@@ -36,6 +36,7 @@ a {
     padding: 10px;
 }
 
+
 h2 {
     margin-left: 10px;
 }
@@ -45,4 +46,41 @@ p {
     border-left: 2px solid; color: #69696a;
     padding-left: 10px;
     margin-left: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    h1 {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        align-items: center; 
+    }
+ 
+
+     ul {
+        display: flex;
+        justify-content: center; 
+        position: relative;
+    
+    }  
+
+    li {
+        padding: 10px;
+    }
+
+    p {
+        width: 50%;
+    
+    }
+    h2 .button {
+        position: fixed;
+        bottom: 0;
+        align-items: center;
+        transform: 50% translateX(-50%);
+        width: auto;
+        padding: 10px;
+    }
+
+
 }
